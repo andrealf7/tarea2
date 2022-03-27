@@ -19,11 +19,13 @@ def home():
         db.session.add(InsMssg)
         db.session.commit()
         return redirect(url_for("main.home"))
-    return render_template("main/main.html", form=form)
+    return render_template("main.html", form=form)
 
 
 @main.route("/messages")
 def message():
     List = messages.query.all()
-    return render_template("main/messages.html", messagesList=List)
+    return render_template("messages.html", messagesList=List)
+
+
 
