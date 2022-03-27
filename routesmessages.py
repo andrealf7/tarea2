@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template
-from utils.db import db
-from models.message import Message
+from db import db
+from modelsmessage import Message
 from sqlalchemy import desc
 
 messages = Blueprint("messages", __name__, url_prefix="/messages")

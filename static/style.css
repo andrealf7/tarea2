@@ -1,0 +1,285 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro";
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.Containers {
+  display: none;
+}
+
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+.enable, .dots:hover {
+  background-color: #717161;
+}
+
+.navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 1001;   
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    top: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+li {
+    float: left;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#dif{
+    color: white;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #588157;
+}
+
+h1{
+    font-family: "Source Sans Pro";
+    color: rgb(56, 54, 42);
+}
+
+h2 {
+    padding-top: 50px;
+    font-family: "Source Sans Pro";
+    text-align: center;
+    font-size: 60px;
+}
+#chile-text{
+    color: white;
+}
+
+.genback {
+    background-color: #5e0303;
+    padding-bottom: 100px;
+}
+
+.genback h2 {
+    color: #c9d4b5;
+    font-size: 50px;
+}
+#aboutme{
+    color: white;
+}
+
+.container {
+    position: relative;
+}
+
+.inicio {
+    text-align: center;
+    padding-top: 250px;
+}
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.center h1 {
+    font-size: 200px;
+    color: white;
+}
+
+.backcv { 
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url("https://s3-eu-west-1.amazonaws.com/rankia/images/valoraciones/0014/3112/Chile-Turismo-Carretera-Austral.jpg?1393944354");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+        background-color: #ffffff;
+        padding: 30px;
+        margin: 50px 100px 0px 100px;
+}      
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+}
+
+.textodif {
+    text-align: center;
+    margin: 15px 300px 15px 300px;
+}
+
+.textodif p {
+    font-size: 25px;
+    color: rgb(185, 185, 185)
+}
+
+.diferenciadores {
+    font-size: 25px;
+}
+
+#grid-impacto {
+    gap:50px
+}
+
+.bloque_referencias{
+    margin: 50px 100px 50px 100px;
+    padding-bottom: 10px;
+    color: rgb(165, 165, 165);
+    font-style: bold;
+    
+}
+
+.subdivmssgs{
+    padding: 10px 50px 10px 50px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(4, 1, 58, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imagen_ref{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.subdivmssgs_titulo{
+    margin: 20px 0;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.subdivmssgs_parrafo{
+    font-weight: 300;
+}
+
+.grid-actividad {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:30px;
+    background-color: #92ac95;
+    padding: 25px 150px 25px 150px; 
+} 
+.grid-actividad > div {
+text-align: center;
+font-size: 25px;
+}
+
+.titulo-actividad {
+    padding: 25px;
+    padding-bottom: 0px;
+    background-color: #92ac95;
+    font-family: "Source Sans Pro";
+    color: rgb(56, 54, 42);
+    font-size: 25px;
+}
+
+.btn-actividad {
+    width:auto;
+}
+
+.iconos {
+    margin: 50px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+  }
+  
+
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+
+ 

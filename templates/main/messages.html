@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/style.css" />
+
+  </head>
+
+  <body>
+    <script SRC="../../static/style.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bfe61dead8.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+    
+    <h2>Mensajes</h2><br />
+    <div class="divmssg">
+      <div class="subdivmssgs">
+        {% for item in messagesList %}
+        <h3 class="subdivmssgs_titulo">{{ item.firstname}} {{item.lastname}}</h3>
+        <p class="subdivmssgs_parrafo">{{ item.message}} </p>
+        <br />
+        <br>
+        <p class="subdivmssgs_parrafo">
+          <p class="subdivmssgs_parrafo">{{ item.email}} </p>
+        </p>
+        {% endfor %}
+
+      </div>
+    </div>
+  
+
+  </body>
+</html>

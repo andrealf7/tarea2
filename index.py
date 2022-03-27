@@ -1,5 +1,9 @@
+from flask_sqlalchemy import SQLAlchemy
 from app import app
-from utils.db import db
+
+from db import db
+
+SQLAlchemy(app)
 
 with app.app_context():
     db.create_all()

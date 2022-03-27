@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/style.css" />
+
+  </head>
+
+  <body>
+    <div class="navbar">
+        <ul>
+          <li><a href="#atractivos">Atractivos</a></li>
+          <li><a href="#diferenciador">Diferenciadores</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+
+    <script SRC="../../static/style.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bfe61dead8.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+<div class="backcv">
+  <div class="inicio">
+    <div class="box1">
+      <div class="center">
+        <h1 id="chilegrande">CHILE</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="slideshow-container fade">
+    <h2><a name="atractivos">CONOCE EL PAÍS</a></h2>
+
+  <div class="Containers">
+    <div class="MessageInfo">1 / 3</div>
+    <img src="../../static/atractivos/1.jpg" style="width:100%">
+    </div>
+
+    <div class="Containers">
+      <div class="MessageInfo">2 / 3</div>
+      <img src="../../static/atractivos/2.jpg" style="width:100%">
+    </div>
+
+    <div class="Containers">
+      <div class="MessageInfo">3 / 3</div>
+      <img src="../../static/atractivos/3.jpg" style="width:100%">
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="genback">
+
+  <h2><a name="diferenciador" id="dif">Diferenciadores</a></h2>
+
+  <div class="textodif">
+    <p>
+      Además de la calidad de personas y la impecable cultura, en Chile nos caracterizamos
+      por algunos de las peculiaridades con las que contamos, entre ellas:
+    </p>
+  </div>
+  <div class="grid-container" id="grid-impacto">
+    <div>
+      <i class="fa-solid fa-seedling"></i>
+      <h3>200</h3>
+      <p class="diferenciadores">
+        Especies de flora únicas 
+      </p>
+    </div>
+    <div>
+      <i class="fa-solid fa-wine-bottle"></i>
+      <h3>100</h3>
+      <p class="diferenciadores">
+        años de experiencia en vinos
+      </p>
+    </div>
+    <div>
+      <i class="fa-solid fa-church"></i>
+      <h3> 16 </h3>
+      <p class="diferenciadores">
+        Iglesias como Patrimonios de la Humanidad
+      </p>
+    </div>
+  </div>
+
+  <div class="textodif">
+    <h1><a name="contacto" id="aboutme">Conoce más de mí y contáctame</a></h1>
+  </div>
+  <div class="bloque_referencias">
+    <div class="subdivmssgs">
+      <h3 class="subdivmssgs_titulo">Andrea Alfaro</h3>
+      <img src="../../static/atractivos/Imagen1.jpg" class="imagen_ref" /><br />
+      <p class="subdivmssgs_parrafo">Soy una persona integral, líder y responsable. Deseo acceder a una área de desarrollo sostenible o finanzas para contribuir de manera positiva a la sociedad. De esta forma, busco poner mis capacidades y competencias al servicio de los demás</p>
+    </div>
+
+    <form action="{{ url_for('main.home') }}" method="post">
+      {{ form.hidden_tag() }}
+      {{ form.Nombre.label }}
+      {{ form.Nombre }}
+      {{ form.Apellido.label }}
+      {{ form.Apellido }}
+      {{ form.Correo.label }}
+      {{ form.Correo }}
+      {{ form.Mensaje.label }}
+      {{ form.Mensaje }}
+      {{ form.submit }}
+    </form>
+    </div>
+
+  <div class="footer-basic">
+    <footer>
+        <div class="social">
+          <a href="https://instagram.com/andrea.alfaroo"><i class="fa-brands fa-instagram-square"></i></a>
+          <a href="https://github.com/andrealf7"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+  </div>
+</div>
+
+</body>
+</html>
